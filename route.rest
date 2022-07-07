@@ -1,0 +1,25 @@
+POST  http://localhost:3000/user 
+Content-Type: application/json
+
+{
+    "name":"user 1",
+    "username":"nasution",
+    "password":"nasution05"
+}
+
+###
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/62c6d8054f59071355ff6c4b
+
+###
+DELETE http://localhost:3000/user/62c6e8c4800735a9b2370b9e
+
+###
+PATCH  http://localhost:3000/user/62c6f0bba11bb749a104ea1a
+Content-Type: application/json
+
+{
+    "name":"New User 1"
+}

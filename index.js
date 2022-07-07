@@ -18,4 +18,5 @@ const userRouter = require('./routes/user')
 //midleware to reach the userRouter
 app.use('/user',userRouter);
 // server listen at port 3000
-app.listen(3000, () => console.log("server connected!"))
+const PORT = 3000;
+app.listen(PORT, () => console.log(`server connected at http://localhost:${PORT}`))
